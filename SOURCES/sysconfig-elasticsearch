@@ -1,0 +1,8 @@
+# START DEFAULT BLOCK FROM RHEL PACKAGE
+ES_PATH_LOG=/var/log/elasticsearch
+ES_PATH_DATA=/var/lib/elasticsearch
+ES_PATH_WORK=/tmp/elasticsearch
+ES_PATH_CONF=/etc/elasticsearch
+ES_CONFIG=/etc/elasticsearch/elasticsearch.yml
+ES_INCLUDE=/usr/share/java/elasticsearch/bin/elasticsearch.in.sh
+# END DEFAULT BLOCK FROM RHEL PACKAGE
