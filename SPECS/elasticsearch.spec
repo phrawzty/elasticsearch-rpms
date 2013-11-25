@@ -83,7 +83,7 @@ fi
 
 # create elasticsearch user
 if ! getent passwd elsrch >/dev/null; then
-        useradd -r -g elasticsearch -d %{_javadir}/%{name} \
+        useradd -r -g elsrch -d %{_javadir}/%{name} \
             -s /sbin/nologin -c "You know, for search" elsrch
 fi
 
