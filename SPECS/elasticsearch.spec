@@ -77,8 +77,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %pre
 # create elasticsearch group
-if ! getent group elasticsearch >/dev/null; then
-        groupadd -r elasticsearch
+if ! getent group elsrch >/dev/null; then
+        groupadd -r elsrch
 fi
 
 # create elasticsearch user
