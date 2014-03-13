@@ -77,13 +77,13 @@ rm -rf $RPM_BUILD_ROOT
 
 %pre
 # create elasticsearch group
-if ! getent group elsrch >/dev/null; then
-        groupadd -r elsrch
+if ! getent group elasticsearch >/dev/null; then
+        groupadd -r elasticsearch
 fi
 
 # create elasticsearch user
 if ! getent passwd elsrch >/dev/null; then
-        useradd -r -g elsrch -d %{_javadir}/%{name} \
+        useradd -r -g elasticsearch -d %{_javadir}/%{name} \
             -s /sbin/nologin -c "You know, for search" elsrch
 fi
 
@@ -110,7 +110,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_javadir}/elasticsearch/plugins
 %config(noreplace) %{_sysconfdir}/elasticsearch
 %doc LICENSE.txt  NOTICE.txt  README.textile
-%defattr(-,elsrch,elsrch,-)
+%defattr(-,elsrch,elasticsearch,-)
 %dir %{_localstatedir}/lib/elasticsearch
 %{_localstatedir}/run/elasticsearch
 %dir %{_localstatedir}/log/elasticsearch
