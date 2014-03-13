@@ -110,7 +110,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_javadir}/elasticsearch/plugins
 %config(noreplace) %{_sysconfdir}/elasticsearch
 %doc LICENSE.txt  NOTICE.txt  README.textile
-%defattr(-,elasticsearch,elasticsearch,-)
+%defattr(-,elsrch,elsrch,-)
 %dir %{_localstatedir}/lib/elasticsearch
 %{_localstatedir}/run/elasticsearch
 %dir %{_localstatedir}/log/elasticsearch
