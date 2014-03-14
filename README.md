@@ -16,7 +16,7 @@ Instructions
 
  * Sym link all the sources and spec files into your build tree
     
-    <pre>export repo=`pwd`/elasticserach-rpms
+    <pre>export repo=`pwd`/elasticsearch-rpms
     cd rpmbuild
     ln -s ${repo}/SPECS/elasticsearch.spec SPECS/elasticsearch.spec 
     ln -s ${repo}/SOURCES/* SOURCES/</pre>
