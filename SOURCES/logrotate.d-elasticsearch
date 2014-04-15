@@ -1,8 +1,2 @@
-/var/log/elasticsearch/*.log {
-        daily
-        rotate 14
-        copytruncate
-        compress
-        missingok
-        notifempty
-}
+# This file has been deprecated and will be removed in a future release.
+# https://bugzilla.mozilla.org/show_bug.cgi?id=996613
