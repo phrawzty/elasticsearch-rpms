@@ -3,7 +3,7 @@
 
 Name:           elasticsearch
 Version:        0.90.13
-Release:        2%{?dist}
+Release:        1%{?dist}
 Summary:        A distributed, highly available, RESTful search engine
 
 Group:          System Environment/Daemons
@@ -117,7 +117,7 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
-* Wed Apr 23 2013 Dan Maher <dmaher@mozilla.com> 0.90.13
+* Wed Apr 23 2014 Dan Maher <dmaher@mozilla.com> 0.90.13
 - New upstream version (0.90.x final?)
 
 * Wed Feb 05 2014 Dan Maher <dmaher@mozilla.com> 0.90.11
